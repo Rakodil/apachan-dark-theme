@@ -1,0 +1,6 @@
+@import "mixins";
+
+// post
+body > table {
+    @include post();
+}

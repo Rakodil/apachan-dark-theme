@@ -1,0 +1,18 @@
+$domain: 'apachan.net';
+$escaped-domain: 'apachan\\\\.net';
+
+@-moz-document domain("#{$domain}") {
+    @import 'common';
+}
+
+@-moz-document regexp("http://#{$escaped-domain}/((all|b.*|c|med|r|prg|new|i|vk|eot|a|gay)(_\\d+)?\\.html|mine\\.php|favorite\\.php(\\?id=\\d+(&del=1)?)?|replies\\.php)") {
+    @import 'post-list';
+}
+
+@-moz-document regexp("http://#{$escaped-domain}/(\\d+(_\\d+)?\\.html(#.*)?|new\\.php\\?id=\\d+&t=\\d+#new)") {
+    @import 'thread';
+}
+
+@-moz-document regexp("http://#{$escaped-domain}/detector\\.php\\?id=\\d+") {
+    @import 'detector';
+}

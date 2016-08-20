@@ -1,0 +1,6 @@
+@import "mixins";
+
+// post
+table[id^="tbl_"] {
+    @include post();
+}

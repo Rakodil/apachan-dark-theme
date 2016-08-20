@@ -1,0 +1,27 @@
+$color-dark: hsl(0, 0%, 15%);
+$color-light: hsl(0, 0%, 65%);
+$color-primary: hsl(208, 60%, 50%);
+$color-warning: hsl(0, 60%, 55%);
+
+$background-color-base: $color-dark;
+$text-color-base: $color-light;
+$shadow-color-base: rgba(0, 0, 0, 0.75);
+
+$menu-bg-color-base: darken($background-color-base, 2%);
+
+$button-bg-color-base: lighten($background-color-base, 18%);
+$button-bg-color-hovered: lighten($button-bg-color-base, 14%);
+$button-text-color-base: $text-color-base;
+$button-text-color-hovered: $text-color-base;
+
+$input-bg-color-base: darken($background-color-base, 2%);
+$input-border-color-base: lighten($input-bg-color-base, 10%);
+$input-text-color-base: $text-color-base;
+
+$quote-background-color: $background-color-base;
+$quote-border-color: lighten($quote-background-color, 15%);
+
+$post-body-bg-color: lighten($background-color-base, 5%);
+$post-footer-bg-color: darken($background-color-base, 2%);
+$post-footer-link-text-color-base: $text-color-base;
+$post-footer-link-text-color-hovered: lighten($post-footer-link-text-color-base, 15%);

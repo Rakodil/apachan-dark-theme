@@ -1,0 +1,18 @@
+@import "palette";
+@import "mixins";
+
+// post
+table[style*="background-color:#E6E6E6"] {
+    @include post();
+}
+
+// link to visited post
+a.anew:visited {
+    $visited-link-text-color-base: darken($text-color-base, 7%);
+
+    color: $visited-link-text-color-base;
+
+    &:hover {
+        color: lighten($visited-link-text-color-base, 15%);
+    }
+}

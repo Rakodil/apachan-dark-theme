@@ -1,0 +1,42 @@
+@import "palette";
+@import "paddings";
+
+@mixin post() {
+    background-color: $post-body-bg-color !important;
+    border: none !important;
+    box-shadow: 0 0 8px 0 $shadow-color-base;
+
+    > tbody > tr {
+        &:first-child > td:first-child {
+            padding: $post-body-padding-top $post-padding-horizontal $post-body-padding-bottom;
+
+            > div {
+                &[style*="width:780px"],
+                &[style*="width: 780px"] {
+                    width: 785px - $post-padding-horizontal * 2 !important;
+                }
+            }
+
+            // title
+            b:first-child {
+                display: inline-block;
+                margin-bottom: $post-padding-horizontal;
+            }
+
+            // image
+            img[hspace] {
+                margin: 0 $post-padding-horizontal 0 0;
+            }
+        }
+
+        &:nth-child(2) {
+            display: none;
+        }
+
+        // footer
+        &:nth-child(3) > td {
+            padding: $post-footer-padding-vertical $post-padding-horizontal;
+            background-color: $post-footer-bg-color !important;
+        }
+    }
+}

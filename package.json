@@ -1,0 +1,17 @@
+{
+  "author": "Rakodil",
+  "name": "apachan-dark-theme",
+  "repository": "Rakodil/apachan-dark-theme",
+  "license": "MIT",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.5.2",
+    "postcss-will-change": "^1.1.0"
+  }
+}

@@ -1,0 +1,62 @@
+@import "palette";
+@import "paddings";
+@import "mixins";
+
+// any post in thread
+table[id^="tbl_"],
+table[style^="font-size:13px;background-color:#CCEECC;"] {
+    @include post();
+}
+
+// original post
+table[style^="font-size:13px;background-color:#CCEECC;"] {
+    background-color: hsl(120, 19%, 20%) !important;
+
+    // ad
+    + br + br + table {
+        display: none;
+    }
+
+    > tbody > tr {
+        // footer
+        &:nth-child(3) > td {
+            background-color: hsl(120, 40%, 10%) !important;
+        }
+
+        // polling
+        &:nth-child(4) > td {
+            padding: $post-polling-padding-vertical $post-padding-horizontal;
+        }
+    }
+}
+
+// target post
+table[style*="background: rgb(240, 230, 140)"] {
+    background-color: hsl(54, 75%, 14%) !important;
+}
+
+// open all button
+#oadiv {
+    width: auto !important;
+    padding: 0 !important;
+    text-align: center;
+    background-color: $button-bg-color-base !important;
+    box-shadow: 0 0 8px 0 $shadow-color-base;
+    will-change: background-color;
+
+    &:hover {
+        background-color: $button-bg-color-hovered !important;
+        transition: background-color 0.3s !important;
+    }
+
+    a {
+        display: block;
+        padding: 5px 15px;
+        color: $button-text-color-base;
+        text-decoration: none;
+
+        &:hover {
+            color: $button-text-color-hovered;
+        }
+    }
+}

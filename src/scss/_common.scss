@@ -1,0 +1,210 @@
+@import "palette";
+@import "fonts";
+
+::-webkit-scrollbar {
+    max-width: 10px;
+    max-height: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+    background-color: $background-color-base;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $button-bg-color-base;
+    transition: background-color 0.3s;
+    will-change: background-color;
+
+    &:hover {
+        background-color: $button-bg-color-hovered;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: lighten($text-color-base, 15%);
+}
+
+* {
+    font-family: 'Open Sans', Verdana, sans-serif !important;
+}
+
+body {
+    background-color: $background-color-base;
+    color: $text-color-base;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: lighten($background-color-base, 25%);
+}
+
+a {
+    color: $color-primary;
+    transition: color 0.3s;
+    will-change: color;
+
+    &:hover {
+        color: lighten($color-primary, 15%);
+    }
+}
+
+textarea,
+input,
+select {
+    box-sizing: border-box;
+}
+
+textarea,
+input[type="text"],
+select {
+    padding: 4px;
+}
+
+textarea,
+input[type="text"],
+input[type="submit"],
+input[type="checkbox"],
+select {
+    border: 1px solid $input-border-color-base;
+    box-shadow: 0 0 8px 0 $shadow-color-base;
+}
+
+textarea,
+input[type="text"],
+input[type="checkbox"],
+select {
+    color: $input-text-color-base;
+    background-color: $input-bg-color-base;
+}
+
+input[type="submit"] {
+    background-color: $button-bg-color-base !important;
+    color: $button-text-color-base;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s !important;
+    will-change: background-color;
+
+    &:hover {
+        background-color: $button-bg-color-hovered !important;
+        color: $button-text-color-hovered;
+    }
+}
+
+input[type="file"] {
+    opacity: 0.65;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    &,
+    &:focus,
+    &:hover:active {
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        height: 1em !important;
+        width: 1em !important;
+    }
+
+    &:checked {
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Im05OC43OTk5ODggMjEzbC0wLjc5OTk4OCA4OWMwIDAgMTAzIDEwMiAxMDQgMTAyYzEgMCAyMDUgLTIwMSAyMDUgLTIwMWMwIDAgMCAtOTAgMCAtOTFjLTAuNzk5OTg4IDAgLTIwNCAyMDMgLTIwNCAyMDNsLTEwNCAtMTAyeiIgZmlsbD0iI2RkZGRkZCIvPjwvZz48L3N2Zz4KCg==") !important;
+        background-size: cover !important;
+        -webkit-filter: contrast(0.8);
+        filter: contrast(0.8);
+    }
+}
+
+img,
+iframe,
+object {
+    -webkit-filter: brightness(0.65);
+    filter: brightness(0.65);
+    transition: all 0.3s;
+
+    &:hover {
+        -webkit-filter: brightness(1);
+        filter: brightness(1);
+    }
+}
+
+font {
+    &[color="red"],
+    &[color="#ff0000"] {
+        color: $color-warning;
+    }
+}
+
+// form
+table table {
+    tr[valign="top"] + tr > td:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // title
+        input[type="text"] {
+            align-self: stretch;
+            width: 330px;
+        }
+
+        input[type="submit"] {
+            align-self: stretch;
+        }
+    }
+
+    textarea {
+        width: 100% !important;
+    }
+}
+
+// quote
+.quote {
+    background-color: $quote-background-color;
+    border-color: $quote-border-color;
+}
+
+// spoiler
+a[onmouseover][onmouseover] {
+    background-color: $text-color-base !important;
+    color: $text-color-base !important;
+    transition: background-color 0.3s;
+    will-change: background-color;
+
+    &:hover {
+        background-color: inherit !important;
+        color: inherit !important;
+    }
+}
+
+body > noindex:first-of-type {
+    display: block !important;
+
+    // navigation
+    > div:first-child {
+        background-color: $menu-bg-color-base !important;
+        box-shadow: 0 0 8px 0 $shadow-color-base;
+
+        form {
+            display: flex;
+
+            [type="submit"] {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    // telegram link & chat
+    > div:nth-child(2),
+    > div:nth-child(3) {
+        display: none;
+    }
+}
