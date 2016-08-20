@@ -1,10 +1,10 @@
 Apachan Dark Theme
 ==================
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![CC BY-SA - Creative Commons Attribution-ShareAlike licensed](https://upload.wikimedia.org/wikipedia/commons/d/d0/CC-BY-SA_icon.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Apachan Dark Theme for [Stylish](https://userstyles.org/)
 
 ## License
 
-[The MIT License](./LICENSE)
+[The CC BY-SA - Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/4.0/)

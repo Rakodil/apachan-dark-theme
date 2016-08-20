@@ -2,8 +2,8 @@
   "author": "Rakodil",
   "name": "apachan-dark-theme",
   "repository": "Rakodil/apachan-dark-theme",
-  "license": "MIT",
-  "version": "1.0.0",
+  "license": "CC BY-SA",
+  "version": "1.0.1",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "grunt": "^1.0.1",
