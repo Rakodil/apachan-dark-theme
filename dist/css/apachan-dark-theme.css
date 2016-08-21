@@ -364,6 +364,14 @@
     padding: 8px 15px;
     background-color: #212121 !important;
   }
+  table[id^="tbl_"] > tbody > tr:nth-child(3) > td a,
+  table[style*="background-color:#CCEECC"] > tbody > tr:nth-child(3) > td a {
+    color: #a6a6a6;
+  }
+  table[id^="tbl_"] > tbody > tr:nth-child(3) > td a:hover,
+  table[style*="background-color:#CCEECC"] > tbody > tr:nth-child(3) > td a:hover {
+    color: #cccccc;
+  }
 
   table[style*="background-color:#CCEECC"] {
     background-color: #293d29 !important;
