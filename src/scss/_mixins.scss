@@ -33,10 +33,15 @@
             display: none;
         }
 
-        // footer
+        // toolbar
         &:nth-child(3) > td {
             padding: $post-footer-padding-vertical $post-padding-horizontal;
             background-color: $post-footer-bg-color !important;
+        }
+
+        // polling
+        &:nth-child(4) > td {
+            padding: $post-polling-padding-vertical $post-padding-horizontal;
         }
     }
 }
