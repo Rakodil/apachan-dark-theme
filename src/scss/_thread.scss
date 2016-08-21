@@ -4,12 +4,12 @@
 
 // any post in thread
 table[id^="tbl_"],
-table[style^="font-size:13px;background-color:#CCEECC;"] {
+table[style*="background-color:#CCEECC"] {
     @include post();
 }
 
 // original post
-table[style^="font-size:13px;background-color:#CCEECC;"] {
+table[style*="background-color:#CCEECC"] {
     background-color: hsl(120, 19%, 20%) !important;
 
     // ad
@@ -17,16 +17,8 @@ table[style^="font-size:13px;background-color:#CCEECC;"] {
         display: none;
     }
 
-    > tbody > tr {
-        // footer
-        &:nth-child(3) > td {
-            background-color: hsl(120, 40%, 10%) !important;
-        }
-
-        // polling
-        &:nth-child(4) > td {
-            padding: $post-polling-padding-vertical $post-padding-horizontal;
-        }
+    > tbody > tr:nth-child(3) > td {
+        background-color: hsl(120, 40%, 10%) !important;
     }
 }
 

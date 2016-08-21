@@ -5,6 +5,8 @@ $color-warning: hsl(0, 60%, 55%);
 
 $background-color-base: $color-dark;
 $text-color-base: $color-light;
+$link-color-base: $color-primary;
+$link-color-hovered: lighten($link-color-base, 15%);
 $shadow-color-base: rgba(0, 0, 0, 0.75);
 
 $menu-bg-color-base: darken($background-color-base, 2%);

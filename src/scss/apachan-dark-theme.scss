@@ -1,5 +1,5 @@
 /*!
- * Apachan Dark Theme v1.0.1
+ * Apachan Dark Theme v1.0.2
  * (c) 2016, Rakodil
  * Licensed under CC BY-SA - Creative Commons Attribution-ShareAlike (https://creativecommons.org/licenses/by-sa/4.0/)
  */
@@ -11,14 +11,10 @@ $escaped-domain: 'apachan\\\\.net';
     @import 'common';
 }
 
-@-moz-document regexp("http://#{$escaped-domain}/((all|b.*|c|med|r|prg|new|i|vk|eot|a|gay)(_\\d+)?\\.html|mine\\.php|favorite\\.php(\\?id=\\d+(&del=1)?)?|replies\\.php)") {
+@-moz-document regexp("http://#{$escaped-domain}/((all|b.*|c|med|r|prg|new|i|vk|eot|a|gay)(_\\d+)?\\.html|mine\\.php|favorite\\.php(\\?id=\\d+(&del=1)?)?|replies\\.php|detector\\.php\\?id=\\d+)") {
     @import 'post-list';
 }
 
 @-moz-document regexp("http://#{$escaped-domain}/(\\d+(_\\d+)?\\.html(#.*)?|new\\.php\\?id=\\d+&t=\\d+#new)") {
     @import 'thread';
-}
-
-@-moz-document regexp("http://#{$escaped-domain}/detector\\.php\\?id=\\d+") {
-    @import 'detector';
 }
