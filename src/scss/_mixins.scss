@@ -37,11 +37,37 @@
         &:nth-child(3) > td {
             padding: $post-footer-padding-vertical $post-padding-horizontal;
             background-color: $post-footer-bg-color !important;
+
+            a {
+                color: $post-footer-link-text-color-base;
+
+                &:hover {
+                    color: $post-footer-link-text-color-hovered;
+                }
+            }
         }
 
         // polling
         &:nth-child(4) > td {
             padding: $post-polling-padding-vertical $post-padding-horizontal;
+        }
+    }
+
+    a.anew {
+        color: $link-color-base !important;
+
+        &:hover {
+            color: $link-color-hovered !important;
+        }
+
+        &:visited {
+            $visited-link-text-color-base: darken($text-color-base, 7%);
+
+            color: $visited-link-text-color-base !important;;
+
+            &:hover {
+                color: lighten($visited-link-text-color-base, 15%) !important;;
+            }
         }
     }
 }

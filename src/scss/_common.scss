@@ -46,12 +46,12 @@ hr {
 }
 
 a {
-    color: $color-primary;
+    color: $link-color-base;
     transition: color 0.3s;
     will-change: color;
 
     &:hover {
-        color: lighten($color-primary, 15%);
+        color: $link-color-hovered;
     }
 }
 

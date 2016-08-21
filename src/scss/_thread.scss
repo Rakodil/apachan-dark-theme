@@ -6,15 +6,6 @@
 table[id^="tbl_"],
 table[style*="background-color:#CCEECC"] {
     @include post();
-
-    // footer
-    > tbody > tr:nth-child(3) > td a {
-        color: $post-footer-link-text-color-base;
-
-        &:hover {
-            color: $post-footer-link-text-color-hovered;
-        }
-    }
 }
 
 // original post
