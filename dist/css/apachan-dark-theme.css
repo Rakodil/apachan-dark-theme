@@ -238,8 +238,10 @@
     filter: brightness(1);
   }
 
-  font[color="red"], font[color="#ff0000"] {
-    color: #d14747;
+  [style*="color:red"],
+  [color="red"],
+  [color="#ff0000"] {
+    color: #d14747 !important;
   }
 
   table table tr[valign="top"] + tr > td:nth-child(2) {

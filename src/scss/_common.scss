@@ -136,11 +136,10 @@ object {
     }
 }
 
-font {
-    &[color="red"],
-    &[color="#ff0000"] {
-        color: $color-warning;
-    }
+[style*="color:red"],
+[color="red"],
+[color="#ff0000"] {
+    color: $color-warning !important;
 }
 
 // form
