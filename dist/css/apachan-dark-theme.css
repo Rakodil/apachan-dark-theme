@@ -263,14 +263,14 @@
     border-color: #4d4d4d;
   }
 
-  a[onmouseover][onmouseover] {
+  a[onmouseover][onmouseout] {
     background-color: #a6a6a6 !important;
     color: #a6a6a6 !important;
     transition: background-color 0.3s;
     backface-visibility: hidden;
     will-change: background-color;
   }
-  a[onmouseover][onmouseover]:hover {
+  a[onmouseover][onmouseout]:hover {
     background-color: inherit !important;
     color: inherit !important;
   }
@@ -329,49 +329,49 @@
 }
 @-moz-document regexp("http://apachan\\.net/(\\d+(_\\d+)?\\.html(#.*)?|new\\.php\\?id=\\d+&t=\\d+#new)") {
   table[id^="tbl_"],
-  table[style^="font-size:13px;background-color:#CCEECC;"] {
+  table[style*="background-color:#CCEECC"] {
     background-color: #333333 !important;
     border: none !important;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
   }
   table[id^="tbl_"] > tbody > tr:first-child > td:first-child,
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:first-child > td:first-child {
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child {
     padding: 15px 15px 20px;
   }
   table[id^="tbl_"] > tbody > tr:first-child > td:first-child > div[style*="width:780px"], table[id^="tbl_"] > tbody > tr:first-child > td:first-child > div[style*="width: 780px"],
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:first-child > td:first-child > div[style*="width:780px"],
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:first-child > td:first-child > div[style*="width: 780px"] {
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child > div[style*="width:780px"],
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child > div[style*="width: 780px"] {
     width: 755px !important;
   }
   table[id^="tbl_"] > tbody > tr:first-child > td:first-child b:first-child,
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:first-child > td:first-child b:first-child {
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child b:first-child {
     display: inline-block;
     margin-bottom: 15px;
   }
   table[id^="tbl_"] > tbody > tr:first-child > td:first-child img[hspace],
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:first-child > td:first-child img[hspace] {
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child img[hspace] {
     margin: 0 15px 0 0;
   }
   table[id^="tbl_"] > tbody > tr:nth-child(2),
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:nth-child(2) {
+  table[style*="background-color:#CCEECC"] > tbody > tr:nth-child(2) {
     display: none;
   }
   table[id^="tbl_"] > tbody > tr:nth-child(3) > td,
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:nth-child(3) > td {
+  table[style*="background-color:#CCEECC"] > tbody > tr:nth-child(3) > td {
     padding: 8px 15px;
     background-color: #212121 !important;
   }
 
-  table[style^="font-size:13px;background-color:#CCEECC;"] {
+  table[style*="background-color:#CCEECC"] {
     background-color: #293d29 !important;
   }
-  table[style^="font-size:13px;background-color:#CCEECC;"] + br + br + table {
+  table[style*="background-color:#CCEECC"] + br + br + table {
     display: none;
   }
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:nth-child(3) > td {
+  table[style*="background-color:#CCEECC"] > tbody > tr:nth-child(3) > td {
     background-color: #0f240f !important;
   }
-  table[style^="font-size:13px;background-color:#CCEECC;"] > tbody > tr:nth-child(4) > td {
+  table[style*="background-color:#CCEECC"] > tbody > tr:nth-child(4) > td {
     padding: 8px 15px;
   }
 

@@ -4,12 +4,12 @@
 
 // any post in thread
 table[id^="tbl_"],
-table[style^="font-size:13px;background-color:#CCEECC;"] {
+table[style*="background-color:#CCEECC"] {
     @include post();
 }
 
 // original post
-table[style^="font-size:13px;background-color:#CCEECC;"] {
+table[style*="background-color:#CCEECC"] {
     background-color: hsl(120, 19%, 20%) !important;
 
     // ad

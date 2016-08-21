@@ -173,7 +173,7 @@ table table {
 }
 
 // spoiler
-a[onmouseover][onmouseover] {
+a[onmouseover][onmouseout] {
     background-color: $text-color-base !important;
     color: $text-color-base !important;
     transition: background-color 0.3s;
