@@ -306,7 +306,7 @@
     padding: 15px 15px 20px;
   }
   table[style*="background-color:#E6E6E6"] > tbody > tr:first-child > td:first-child > div[style*="width:780px"], table[style*="background-color:#E6E6E6"] > tbody > tr:first-child > td:first-child > div[style*="width: 780px"] {
-    width: 755px !important;
+    width: 750px !important;
   }
   table[style*="background-color:#E6E6E6"] > tbody > tr:first-child > td:first-child b:first-child {
     display: inline-block;
@@ -358,7 +358,7 @@
   table[id^="tbl_"] > tbody > tr:first-child > td:first-child > div[style*="width:780px"], table[id^="tbl_"] > tbody > tr:first-child > td:first-child > div[style*="width: 780px"],
   table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child > div[style*="width:780px"],
   table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child > div[style*="width: 780px"] {
-    width: 755px !important;
+    width: 750px !important;
   }
   table[id^="tbl_"] > tbody > tr:first-child > td:first-child b:first-child,
   table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child b:first-child {
