@@ -3,7 +3,7 @@
   "name": "apachan-dark-theme",
   "repository": "Rakodil/apachan-dark-theme",
   "license": "CC BY-SA",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "grunt": "^1.0.1",
