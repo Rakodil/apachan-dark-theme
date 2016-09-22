@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = (grunt) => {
     'use strict';
 
     require('load-grunt-tasks')(grunt);
@@ -36,6 +36,12 @@ module.exports = function (grunt) {
             },
             dist: {
                 src: 'dist/css/*.css'
+            }
+        },
+        watch: {
+            sass: {
+                files: 'src/scss/*.scss',
+                tasks: ['sass', 'postcss']
             }
         }
     });
