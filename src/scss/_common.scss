@@ -168,7 +168,9 @@ table table {
 // quote
 .quote {
     background-color: $quote-background-color;
-    border-color: $quote-border-color;
+    border: 1px solid $quote-border-color;
+    font-size: 10px;
+    padding: 5px 10px;
     margin-left: 0;
 }
 

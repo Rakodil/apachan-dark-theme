@@ -262,7 +262,9 @@
 
   .quote {
     background-color: #262626;
-    border-color: #4d4d4d;
+    border: 1px solid #4d4d4d;
+    font-size: 10px;
+    padding: 5px 10px;
     margin-left: 0;
   }
 
@@ -312,7 +314,7 @@
     display: inline-block;
     margin-bottom: 15px;
   }
-  table[style*="background-color:#E6E6E6"] > tbody > tr:first-child > td:first-child img[hspace] {
+  table[style*="background-color:#E6E6E6"] > tbody > tr:first-child > td:first-child img[hspace], table[style*="background-color:#E6E6E6"] > tbody > tr:first-child > td:first-child img[align="left"] {
     margin: 0 15px 0 0;
   }
   table[style*="background-color:#E6E6E6"] > tbody > tr:nth-child(2) {
@@ -365,8 +367,9 @@
     display: inline-block;
     margin-bottom: 15px;
   }
-  table[id^="tbl_"] > tbody > tr:first-child > td:first-child img[hspace],
-  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child img[hspace] {
+  table[id^="tbl_"] > tbody > tr:first-child > td:first-child img[hspace], table[id^="tbl_"] > tbody > tr:first-child > td:first-child img[align="left"],
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child img[hspace],
+  table[style*="background-color:#CCEECC"] > tbody > tr:first-child > td:first-child img[align="left"] {
     margin: 0 15px 0 0;
   }
   table[id^="tbl_"] > tbody > tr:nth-child(2),
