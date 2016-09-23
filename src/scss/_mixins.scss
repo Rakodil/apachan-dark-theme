@@ -24,8 +24,11 @@
             }
 
             // image
-            img[hspace] {
-                margin: 0 $post-padding-horizontal 0 0;
+            img {
+                &[hspace],
+                &[align="left"] {
+                    margin: 0 $post-padding-horizontal 0 0;
+                }
             }
         }
 
